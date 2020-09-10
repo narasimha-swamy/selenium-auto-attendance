@@ -35,7 +35,8 @@ def openfirefox():
     if result is not None:
         print("we are going to put the id")
     time.sleep(1)
-    driver.find_element_by_xpath("//textarea[@aria-label='Send a message to everyone']").send_keys("19115")
+    # add your numerical id here
+    driver.find_element_by_xpath("//textarea[@aria-label='Send a message to everyone']").send_keys("id")
     driver.find_element_by_xpath("//div[@data-tooltip='Send message']").click()
     winsound.Beep(2500, 1000)
 
