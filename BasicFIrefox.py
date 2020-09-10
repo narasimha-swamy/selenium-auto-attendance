@@ -13,10 +13,12 @@ def openfirefox():
     # driver.implicitly_wait(3600)
     driver.find_element_by_xpath("//li[@class='-ctas']/a").click()
     driver.find_element_by_xpath("//div[@id='openid-buttons']/button[1]").click()
-    driver.find_element_by_xpath("//input[@id='identifierId']").send_keys("narasimha81433@gmail.com")
+    # put your google account here
+    driver.find_element_by_xpath("//input[@id='identifierId']").send_keys("google_account")
     driver.find_element_by_xpath("//span[text()='Next']//following-sibling::div").click()
     time.sleep(2)
-    driver.find_element_by_xpath("//input[@type='password']//parent::div/input").send_keys("Thirupathi@4")
+    # put your google account password here
+    driver.find_element_by_xpath("//input[@type='password']//parent::div/input").send_keys("password")
     driver.find_element_by_xpath("//span[contains(text(),'Next')]/following-sibling::div").click()
     driver.get("https://meet.google.com/ixx-viep-mou")
     time.sleep(3)
